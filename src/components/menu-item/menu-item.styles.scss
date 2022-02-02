@@ -8,6 +8,11 @@
     border: 1px solid black;
     margin: 0 7.5px 15px;
     overflow: hidden;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.04);
+        transition: 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
     &.large {
         height: 380px;
     }
@@ -23,11 +28,6 @@
         height: 100%;
         background-position: center;
         background-size: cover;
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.04);
-            transition: 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
     }
     .content {
         height: 90px;
